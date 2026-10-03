@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiecte & Evenimente – [Nume Asociație]</title>
+  <meta name="description" content="Vezi proiectele și evenimentele organizate de asociația studențească: conferințe, baluri, hackathoane și campanii sociale.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-badge">[Universitate / Facultate]</span>
+        <span class="top-info">📍 [Adresă Campus, Corp Clădire, Sală / Birou Asociație]</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:contact@asociatie.ro" class="top-link">✉️ contact@asociatie.ro</a>
+        <div class="top-socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">🌱</div>
+        <div class="brand-text-group">
+          <span class="brand-title">[Acronim Asociație]</span>
+          <span class="brand-subtitle">Asociația Studențească [Nume Complet]</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="despre.html" class="nav-link">Despre Noi</a>
+        <a href="departamente.html" class="nav-link">Departamente</a>
+        <a href="proiecte.html" class="nav-link active">Proiecte & Evenimente</a>
+        <a href="noutati.html" class="nav-link">Noutăți</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Devino Voluntar</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Comută meniul">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Proiecte & Inițiative Studențești</h1>
+        <p class="page-hero-subtitle">
+          De la conferințe internaționale și hackathoane până la baluri, seri de film și campanii umanitare. 
+          Aici găsești tot ce mișcă în asociația noastră.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filtre & Proiecte -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Butoane Filtrare Categorii -->
+        <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 40px; flex-wrap: wrap;">
+          <button class="filter-btn active" data-filter="all" style="padding: 8px 20px; border-radius: var(--radius-pill); border: 1.5px solid var(--border-light); background: var(--brand-primary); color: #fff; font-weight: 600; cursor: pointer;">Toate Proiectele</button>
+          <button class="filter-btn" data-filter="academic" style="padding: 8px 20px; border-radius: var(--radius-pill); border: 1.5px solid var(--border-light); background: #fff; color: var(--text-main); font-weight: 600; cursor: pointer;">Profesional & Carieră</button>
+          <button class="filter-btn" data-filter="social" style="padding: 8px 20px; border-radius: var(--radius-pill); border: 1.5px solid var(--border-light); background: #fff; color: var(--text-main); font-weight: 600; cursor: pointer;">Social & Integrare</button>
+          <button class="filter-btn" data-filter="charity" style="padding: 8px 20px; border-radius: var(--radius-pill); border: 1.5px solid var(--border-light); background: #fff; color: var(--text-main); font-weight: 600; cursor: pointer;">Caritabil & Comunitate</button>
+        </div>
+
+        <div class="cards-grid">
+          
+          <!-- Proiect 1 -->
+          <div class="project-card" data-category="academic">
+            <div class="project-header-bar">
+              <span class="project-tag tag-active">Înscrieri Deschise</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Ediție Anuală</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ 14 - 16 Noiembrie 2026</div>
+              <h2 class="card-title">[Nume Eveniment / Congres / Hackathon]</h2>
+              <p class="card-text">
+                Trei zile intensive de prezentări, workshop-uri practice conduse de specialiști din industrie, competiții cu premii și oportunități de stagii de practică.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Amfiteatrul Central & Online</span>
+                <strong>600+ Participanți</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proiect 2 -->
+          <div class="project-card" data-category="social">
+            <div class="project-header-bar">
+              <span class="project-tag tag-upcoming">În Curând</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Tradiție Campus</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ 28 Octombrie 2026</div>
+              <h2 class="card-title">Balul Bobocilor & Concert Live</h2>
+              <p class="card-text">
+                Cea mai așteptată petrecere a toamnei: concursul Miss & Mister Boboc, momente artistice create de studenți, tombolă cu premii și un artist invitat surpriză.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Club Arena / Sala Festivă</span>
+                <strong>1.200+ Spectatori</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proiect 3 -->
+          <div class="project-card" data-category="academic">
+            <div class="project-header-bar">
+              <span class="project-tag tag-annual">Frecvență Lunară</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Dezvoltare Profesională</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ Fiecare Joi de la 18:00</div>
+              <h2 class="card-title">Career Talks: De la Student la Angajat</h2>
+              <p class="card-text">
+                Întâlniri relaxate cu absolvenți ai facultății și manageri de resurse umane. Înveți cum să îți faci un CV atractiv și cum să treci de interviurile tehnice.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Hub de Inovație Campus</span>
+                <strong>Locuri Limitate</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proiect 4 -->
+          <div class="project-card" data-category="charity">
+            <div class="project-header-bar">
+              <span class="project-tag tag-upcoming">Ediție de Iarnă</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Impact Social</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ 5 - 18 Decembrie 2026</div>
+              <h2 class="card-title">Campania Caritabilă: „Dăruiește din Inimă”</h2>
+              <p class="card-text">
+                Colectare de cadouri, cărți și dulciuri pentru copiii din centrele de plasament, alături de un târg caritabil de prăjituri pregătite de voluntarii asociației.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Foaier Facultate</span>
+                <strong>300+ Copii Ajutați</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proiect 5 -->
+          <div class="project-card" data-category="social">
+            <div class="project-header-bar">
+              <span class="project-tag tag-annual">Sezonier</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Exclusiv Membri</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ Primăvară & Toamnă</div>
+              <h2 class="card-title">Teambuilding-ul Asociației la Munte</h2>
+              <p class="card-text">
+                Trei zile de jocuri de echipă, ateliere de comunicare, foc de tabără și relaxare la cabană. Aici se leagă cele mai strânse prietenii între voluntari.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Zona Montană</span>
+                <strong>80+ Voluntari</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proiect 6 -->
+          <div class="project-card" data-category="social">
+            <div class="project-header-bar">
+              <span class="project-tag tag-active">Bi-săptămânal</span>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Relaxare în Campus</span>
+            </div>
+            <div class="project-body">
+              <div class="project-date">🗓️ Marți & Joi seara</div>
+              <h2 class="card-title">Boardgames & Quiz Night în Cafetărie</h2>
+              <p class="card-text">
+                Seri libere de boardgames (Catan, Dixit, Codenames), trivia cu premii amuzante și o oportunitate excelentă de a cunoaște colegi din alți ani.
+              </p>
+              <div class="project-meta-row">
+                <span>📍 Cafetăria Studențească</span>
+                <strong>Acces Gratuit</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Ai o idee de proiect? -->
+    <section class="section section-alt">
+      <div class="container" style="max-width: 800px; text-align: center;">
+        <span class="pill-tag">Inițiativa Ta</span>
+        <h2 class="section-title">Ai o idee de proiect sau eveniment?</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 26px;">
+          Asociația oferă sprijin logistic, promovare și finanțare pentru ideile venite direct de la studenți. 
+          Scrie-ne și hai să transformăm ideea ta în următorul mare eveniment din facultate!
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Propune un Proiect Echipei Noastre</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Comun -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span style="font-size: 1.8rem;">🌱</span>
+          <div>
+            <h3 class="footer-brand-title">[Acronim Asociație]</h3>
+            <span class="footer-brand-sub">Asociația Studențească [Nume]</span>
+          </div>
+        </div>
+        <p class="footer-motto">
+          Organizație studențească independentă, activă în cadrul [Nume Facultate / Universitate], 
+          dedicată dezvoltării personale și profesionale a comunității noastre.
+        </p>
+        <div class="footer-social-row">
+          <a href="#" class="footer-social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn">IN</a>
+          <a href="#" class="footer-social-btn" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigare Rapidă</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="despre.html">Despre Noi & Misiune</a></li>
+          <li><a href="departamente.html">Departamente & Echipe</a></li>
+          <li><a href="proiecte.html">Proiecte & Evenimente</a></li>
+          <li><a href="noutati.html">Noutăți & Articole</a></li>
+          <li><a href="contact.html">Contact & Înscrieri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Departamente</h4>
+        <ul class="footer-nav">
+          <li><a href="departamente.html">Relații Publice & Media</a></li>
+          <li><a href="departamente.html">IT & Web Development</a></li>
+          <li><a href="departamente.html">Resurse Umane (HR)</a></li>
+          <li><a href="departamente.html">Evenimente & Logistică</a></li>
+          <li><a href="departamente.html">Parteneriate & Sponsorizări</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Sediu & Contact Oficial</h4>
+        <ul class="footer-contact-list">
+          <li>📍 [Nume Universitate], Corpul [A/B/C], Sala [101]</li>
+          <li>[Adresă completă: Stradă, Număr, Oraș]</li>
+          <li>✉️ contact@asociatie.ro</li>
+          <li>📞 +40 700 000 000</li>
+          <li>🕒 Program Birou: Luni - Vineri, 12:00 - 18:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 [Nume Asociație Studențească]. Toate drepturile rezervate.</p>
+        <p>Template modular, curat și ușor de modificat.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

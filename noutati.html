@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noutăți & Articole – [Nume Asociație]</title>
+  <meta name="description" content="Ultimele știri, comunicate de presă, ghiduri pentru studenți și noutăți despre viața de campus.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="top-badge">[Universitate / Facultate]</span>
+        <span class="top-info">📍 [Adresă Campus, Corp Clădire, Sală / Birou Asociație]</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:contact@asociatie.ro" class="top-link">✉️ contact@asociatie.ro</a>
+        <div class="top-socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="LinkedIn">IN</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">🌱</div>
+        <div class="brand-text-group">
+          <span class="brand-title">[Acronim Asociație]</span>
+          <span class="brand-subtitle">Asociația Studențească [Nume Complet]</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Acasă</a>
+        <a href="despre.html" class="nav-link">Despre Noi</a>
+        <a href="departamente.html" class="nav-link">Departamente</a>
+        <a href="proiecte.html" class="nav-link">Proiecte & Evenimente</a>
+        <a href="noutati.html" class="nav-link active">Noutăți</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Devino Voluntar</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Comută meniul">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-hero-title">Noutăți & Viața de Campus</h1>
+        <p class="page-hero-subtitle">
+          Știri din facultate, ghiduri utile pentru sesiune și cămin, comunicate oficiale și retrospectiva evenimentelor noastre.
+        </p>
+      </div>
+    </section>
+
+    <!-- Articole / Noutăți -->
+    <section class="section">
+      <div class="container">
+        <div class="news-grid">
+          
+          <!-- Articol 1 -->
+          <article class="news-card">
+            <span class="dept-badge" style="background: #e0f2fe; color: #0284c7; border-color: #bae6fd;">Ghid Practic</span>
+            <div class="news-date">🗓️ 1 Octombrie 2026 • Redacția Asociației</div>
+            <h2 class="news-title">Ghidul Bobocului: Tot ce trebuie să știi în primele săptămâni</h2>
+            <p class="news-excerpt">
+              De unde iei carnetul de student, cum funcționează orarul universitar, unde găsești secretariatele și cum te orientezi rapid în corpurile facultății.
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Citește Ghidul Complet →</a>
+          </article>
+
+          <!-- Articol 2 -->
+          <article class="news-card">
+            <span class="dept-badge">Comunitate & Alegeri</span>
+            <div class="news-date">🗓️ 25 Septembrie 2026 • Secretar General</div>
+            <h2 class="news-title">Rezultatele Adunării Generale și noua echipă de conducere</h2>
+            <p class="news-excerpt">
+              După votul liber al tuturor membrilor activi, asociația își prezintă noul Consiliu Director pentru anul universitar curent și direcțiile strategice.
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Citește Comunicatul →</a>
+          </article>
+
+          <!-- Articol 3 -->
+          <article class="news-card">
+            <span class="dept-badge" style="background: #dcfce7; color: #166534; border-color: #86efac;">Oportunități Carieră</span>
+            <div class="news-date">🗓️ 18 Septembrie 2026 • Departamentul Parteneriate</div>
+            <h2 class="news-title">Parteneriat nou cu [Nume Companie]: 15 locuri de practică plătite</h2>
+            <p class="news-excerpt">
+              Studenții din anii II, III și IV pot aplica la programele de internship de vară cu sprijinul partenerilor noștri din industrie.
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Detalii Înscriere Internship →</a>
+          </article>
+
+          <!-- Articol 4 -->
+          <article class="news-card">
+            <span class="dept-badge">Evenimente Încheiate</span>
+            <div class="news-date">🗓️ 10 Septembrie 2026 • Departamentul PR</div>
+            <h2 class="news-title">Cum a fost la Teambuilding-ul de Toamnă: 3 zile memorabile la munte</h2>
+            <p class="news-excerpt">
+              Peste 70 de voluntari s-au bucurat de jocuri de orientare, seri de cabană și ateliere de formare. Vezi cele mai amuzante fotografii din tabără!
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Vezi Galeria Foto →</a>
+          </article>
+
+          <!-- Articol 5 -->
+          <article class="news-card">
+            <span class="dept-badge" style="background: #fef3c7; color: #92400e; border-color: #fde68a;">Administrativ</span>
+            <div class="news-date">🗓️ 5 Septembrie 2026 • Reprezentanți Studenți</div>
+            <h2 class="news-title">Criterii de acordare a burselor sociale și de merit: Calendar oficial</h2>
+            <p class="news-excerpt">
+              Ce dosare trebuie depuse la secretariat, care sunt veniturile maxime eligibile și ce termene limită trebuie respectate pentru semestrul I.
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Vezi Criteriile & Actele →</a>
+          </article>
+
+          <!-- Articol 6 -->
+          <article class="news-card">
+            <span class="dept-badge">Caritabil</span>
+            <div class="news-date">🗓️ 28 August 2026 • Departamentul Social</div>
+            <h2 class="news-title">Campania de donare de sânge: peste 120 de donatori în 2 zile</h2>
+            <p class="news-excerpt">
+              Mulțumim fiecărui coleg care a ales să doneze! Cu ajutorul Centrului de Transfuzie, am reușit să sprijinim direct peste 300 de pacienți.
+            </p>
+            <a href="#" onclick="alert('Aici se deschide articolul complet'); return false;" style="font-weight: 700; font-size: 0.9rem;">Citește Retrospectiva →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Rămâi conectat / Newsletter prietenos -->
+    <section class="section section-alt">
+      <div class="container" style="max-width: 750px; text-align: center;">
+        <span class="pill-tag">Rămâi Conectat</span>
+        <h2 class="section-title">Nu rata anunțurile importante din facultate!</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 26px;">
+          Urmărește paginile noastre de social media sau trimite-ne adresa ta de email pentru a primi sinteza lunară a oportunităților și evenimentelor.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+          <input type="email" placeholder="Adresa ta de email..." style="padding: 12px 18px; border: 1.5px solid var(--border-light); border-radius: var(--radius-pill); font-family: var(--font-body); font-size: 0.95rem; width: 280px;">
+          <button class="btn btn-primary" onclick="alert('Mulțumim! Vei primi noutățile noastre direct pe email.');">Mă Abonez</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Comun -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span style="font-size: 1.8rem;">🌱</span>
+          <div>
+            <h3 class="footer-brand-title">[Acronim Asociație]</h3>
+            <span class="footer-brand-sub">Asociația Studențească [Nume]</span>
+          </div>
+        </div>
+        <p class="footer-motto">
+          Organizație studențească independentă, activă în cadrul [Nume Facultate / Universitate], 
+          dedicată dezvoltării personale și profesionale a comunității noastre.
+        </p>
+        <div class="footer-social-row">
+          <a href="#" class="footer-social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="footer-social-btn" aria-label="LinkedIn">IN</a>
+          <a href="#" class="footer-social-btn" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigare Rapidă</h4>
+        <ul class="footer-nav">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="despre.html">Despre Noi & Misiune</a></li>
+          <li><a href="departamente.html">Departamente & Echipe</a></li>
+          <li><a href="proiecte.html">Proiecte & Evenimente</a></li>
+          <li><a href="noutati.html">Noutăți & Articole</a></li>
+          <li><a href="contact.html">Contact & Înscrieri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Departamente</h4>
+        <ul class="footer-nav">
+          <li><a href="departamente.html">Relații Publice & Media</a></li>
+          <li><a href="departamente.html">IT & Web Development</a></li>
+          <li><a href="departamente.html">Resurse Umane (HR)</a></li>
+          <li><a href="departamente.html">Evenimente & Logistică</a></li>
+          <li><a href="departamente.html">Parteneriate & Sponsorizări</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Sediu & Contact Oficial</h4>
+        <ul class="footer-contact-list">
+          <li>📍 [Nume Universitate], Corpul [A/B/C], Sala [101]</li>
+          <li>[Adresă completă: Stradă, Număr, Oraș]</li>
+          <li>✉️ contact@asociatie.ro</li>
+          <li>📞 +40 700 000 000</li>
+          <li>🕒 Program Birou: Luni - Vineri, 12:00 - 18:00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 [Nume Asociație Studențească]. Toate drepturile rezervate.</p>
+        <p>Template modular, curat și ușor de modificat.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

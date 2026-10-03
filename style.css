@@ -1,0 +1,1232 @@
+/* ==========================================================================
+   TEMPLATE SITE ASOCIAȚIE STUDENȚEASCĂ
+   Design System: Cald, Prietenos, Rotunjit & Uman
+   
+   👉 CUM SCHIMBI CULORILE PENTRU ASOCIAȚIA TA:
+   Modifică valorile de mai jos din secțiunea :root (ex: --brand-primary).
+   ========================================================================== */
+
+:root {
+  /* 🎨 PALETA DE CULORI (Personalizabilă) */
+  --brand-primary: #15803d;        /* Verde universitar clasic (poți schimba cu albastru #1d4ed8, vișiniu #991b1b etc.) */
+  --brand-primary-hover: #166534;  /* Nuanță mai închisă la hover */
+  --brand-primary-soft: #f0fdf4;   /* Ton pastel pentru fundaluri carduri */
+  --brand-primary-border: #bbf7d0; /* Borduri subtile */
+  
+  --brand-accent: #0284c7;         /* Accent secundar (ex: linkuri / categorii) */
+  --brand-accent-soft: #e0f2fe;
+
+  --color-warm-gold: #f59e0b;
+  --color-tag-bg: #f8fafc;
+
+  /* 📄 FUNDALURI & TEXTE */
+  --bg-page: #fbfdfb;              /* Alb cald, relaxant pentru ochi */
+  --bg-white: #ffffff;             /* Alb imaculat pentru carduri */
+  --bg-subtle: #f3f6f4;            /* Gri-verde foarte deschis pentru secțiuni alternate */
+  --bg-dark-footer: #0c1a11;       /* Verde închis/cărbune pentru footer */
+
+  --text-title: #111827;           /* Text titluri (contrast ridicat, cald) */
+  --text-main: #374151;            /* Text conținut */
+  --text-muted: #6b7280;           /* Text secundar/subtitluri */
+  --text-light: #9ca3af;
+
+  --border-light: #e5e7eb;
+  --border-soft: #d1d5db;
+
+  /* 🔤 TIPOGRAFIE ROTUNJITĂ & PRIETENOASĂ */
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+
+  /* 🔘 FORME ROTUNJITE (Human & Friendly) */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-pill: 9999px;
+
+  /* ☁️ UMBRE FINE & NATURALE */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 12px 30px rgba(21, 128, 61, 0.12);
+
+  --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Reset & Stiluri de Bază
+   ========================================================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.65;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Tipografie */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-title);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--brand-primary-hover);
+}
+
+/* ==========================================================================
+   Header & Bara de Sus (Top Bar)
+   ========================================================================== */
+.top-bar {
+  background: var(--brand-primary-hover);
+  color: #e2f4e7;
+  font-size: 0.825rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-right: 8px;
+}
+
+.top-info {
+  color: #d1ead7;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.top-link {
+  color: #e2f4e7;
+  font-size: 0.825rem;
+}
+
+.top-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.top-socials {
+  display: flex;
+  gap: 6px;
+}
+
+.top-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.top-socials a:hover {
+  background: #fff;
+  color: var(--brand-primary);
+}
+
+/* ==========================================================================
+   Navigație Principală (Sticky & Meniu Multi-Pagină)
+   ========================================================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.04);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.logo-badge {
+  width: 46px;
+  height: 46px;
+  background: var(--brand-primary-soft);
+  border: 1.5px solid var(--brand-primary-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.1);
+  transition: var(--transition);
+}
+
+.brand-logo:hover .logo-badge {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+  line-height: 1.15;
+}
+
+.brand-subtitle {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  padding: 8px 12px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+}
+
+/* Starea activă a paginii curente */
+.nav-link.active {
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  font-weight: 700;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 3px;
+  background: var(--brand-primary);
+  border-radius: var(--radius-pill);
+}
+
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 42px;
+  height: 42px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle-bar {
+  width: 100%;
+  height: 2.5px;
+  background: var(--text-title);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.mobile-toggle.active .toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-toggle.active .toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.active .toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   Butoane Rotunjite & Prietenoase
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+
+.btn-lg {
+  padding: 14px 32px;
+  font-size: 1.05rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.28);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(21, 128, 61, 0.38);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: var(--brand-primary);
+  border: 1.5px solid var(--brand-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-primary-soft);
+  transform: translateY(-2px);
+}
+
+.btn-white {
+  background: #ffffff;
+  color: var(--brand-primary-hover);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-white:hover {
+  background: #f0fdf4;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Hero Section & Page Header
+   ========================================================================== */
+.hero-home {
+  background: linear-gradient(135deg, #166534 0%, #15803d 50%, #16a34a 100%);
+  color: #ffffff;
+  padding: 85px 0 105px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid var(--brand-primary-border);
+}
+
+.hero-home::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: var(--bg-page);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-friendly {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #86efac;
+  box-shadow: 0 0 10px #86efac;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero-desc {
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  color: #e2f4e8;
+  line-height: 1.7;
+  margin-bottom: 34px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Header interior pentru pagini secundare (Despre, Departamente etc.) */
+.page-hero {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: #ffffff;
+  padding: 60px 0 65px;
+  text-align: center;
+  position: relative;
+}
+
+.page-hero-title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.page-hero-subtitle {
+  font-size: 1.1rem;
+  color: #d1ead7;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Contoare Statistici (Hero Stats)
+   ========================================================================== */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 30px 20px;
+  box-shadow: var(--shadow-card);
+  margin-top: 10px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 0 10px;
+  border-right: 1px solid var(--border-light);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-num-box {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+  line-height: 1;
+}
+
+.stat-plus {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+}
+
+.stat-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-title);
+  margin-bottom: 2px;
+}
+
+.stat-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Secțiuni Generale & Titluri
+   ========================================================================== */
+.section {
+  padding: 85px 0;
+}
+
+.section-alt {
+  background-color: var(--bg-subtle);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.pill-tag {
+  display: inline-block;
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  border: 1px solid var(--brand-primary-border);
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  color: var(--text-title);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Carduri & Grilaje (Grid Layouts)
+   ========================================================================== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 30px 26px;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--brand-primary-soft);
+  border: 1px solid var(--brand-primary-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--text-title);
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Carduri pentru Departamente */
+.dept-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary-hover);
+  border: 1px solid var(--brand-primary-border);
+  border-radius: var(--radius-pill);
+  margin-bottom: 16px;
+}
+
+.dept-skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+
+.dept-skills-list li {
+  font-size: 0.775rem;
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* Carduri pentru Proiecte & Evenimente */
+.project-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-header-bar {
+  padding: 20px 24px;
+  background: var(--brand-primary-soft);
+  border-bottom: 1px solid var(--brand-primary-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-tag {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.tag-active {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.tag-upcoming {
+  background: #fef9c3;
+  color: #854d0e;
+  border: 1px solid #fef08a;
+}
+
+.tag-annual {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.project-body {
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  margin-bottom: 8px;
+}
+
+.project-meta-row {
+  border-top: 1px solid var(--border-light);
+  padding-top: 14px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+/* Carduri pentru Echipa de Conducere */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-subtle);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.team-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 0 auto 16px;
+  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.team-name {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.team-bio {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.team-email {
+  font-size: 0.825rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Noutăți & Articole Blog
+   ========================================================================== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.news-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.news-date {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.news-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.news-excerpt {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   Formular de Contact & Înscriere Voluntari
+   ========================================================================== */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.contact-info-card {
+  background: var(--brand-primary-soft);
+  border: 1.5px solid var(--brand-primary-border);
+  border-radius: var(--radius-lg);
+  padding: 40px 32px;
+}
+
+.contact-info-title {
+  font-size: 1.6rem;
+  color: var(--brand-primary-hover);
+  margin-bottom: 14px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.contact-icon {
+  font-size: 1.3rem;
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-subtle);
+}
+
+.form-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 38px 32px;
+  box-shadow: var(--shadow-card);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-title);
+  margin-bottom: 6px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-title);
+  background-color: #ffffff;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
+}
+
+.form-feedback {
+  display: none;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.925rem;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.form-feedback.success {
+  display: block;
+  background-color: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+}
+
+/* ==========================================================================
+   Secțiune FAQ (Întrebări Frecvente)
+   ========================================================================== */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.faq-item {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  border-color: var(--brand-primary-border);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+.faq-answer {
+  display: none;
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-light);
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.footer {
+  background-color: var(--bg-dark-footer);
+  color: #d1ead7;
+  padding: 65px 0 24px;
+  border-top: 4px solid var(--brand-primary);
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  margin-bottom: 45px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.footer-brand-title {
+  color: #ffffff;
+  font-size: 1.35rem;
+}
+
+.footer-brand-sub {
+  font-size: 0.775rem;
+  color: #86efac;
+}
+
+.footer-motto {
+  font-size: 0.885rem;
+  line-height: 1.6;
+  color: #bbf7d0;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.footer-social-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.footer-social-btn:hover {
+  background: var(--brand-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-heading {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav a {
+  color: #bbf7d0;
+  font-size: 0.885rem;
+  transition: var(--transition);
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.footer-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.885rem;
+  color: #bbf7d0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 22px;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.825rem;
+  color: #86efac;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 14px;
+  }
+
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar-left {
+    display: none;
+  }
+
+  .top-bar-content {
+    justify-content: center;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 26px 20px;
+    gap: 14px;
+    border-bottom: 2px solid var(--brand-primary);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
