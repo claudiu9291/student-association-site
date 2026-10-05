@@ -9,27 +9,26 @@ Un model de site prietenos, cald, cu forme rotunjite și structură clară, conc
 Proiectul conține pagini separate, dedicate fiecărei secțiuni cheie:
 
 1. **`index.html`** — **Pagina Principală (Acasă)**:
-   - Hero primitor cu apel la recrutare
-   - Panou de cifre și statistici cheie (ani de activitate, membri, evenimente, parteneri)
+   - Hero primitor și prezentare generală ASMO
+   - Panou de cifre și statistici cheie (ani de activitate, membri, evenimente, beneficiari)
    - Teaser „Cine suntem”
    - Teaser departamente și evenimente viitoare
 2. **`despre.html`** — **Despre Noi**:
    - Povestea și istoricul asociației
    - Misiune, viziune și piloni
-   - Echipa de conducere (Consiliul Director) cu roluri și date de contact
-   - Transparență și link descărcare statut / regulamente
-3. **`departamente.html`** — **Departamente & Echipe**:
-   - Detalierea celor 6 departamente cheie: PR & Media, IT & Web, HR, Evenimente & Logistică, Fundraising, Proiecte Sociale
-   - Competențe dobândite și roluri deschise pentru voluntari
+   - Echipa de conducere completă (Consiliul Director, Comitete, Divizii) cu fotografii și roluri
+   - Filtrare pe categorii de conducere
+3. **`departamente.html`** — **Departamente & Comitete**:
+   - Detalierea comitetelor SCOPH, SCOME, SCORA, SCORP, Schimburi Clinice și PR
+   - Coordonatori cu fotografii și atribuții
+   - Diviziile de suport (Capacity Building, IT, Entertainment, HR, PR, Fundraising)
 4. **`proiecte.html`** — **Proiecte & Evenimente**:
-   - Filtrare pe categorii (Carieră, Social, Caritabil)
-   - Carduri pentru congrese, balul bobocilor, workshop-uri, teambuilding-uri
-   - Invitație deschisă pentru idei de proiecte noi
+   - Filtrare pe categorii (Sănătate Publică, Educație Medicală, Integrare & Social)
+   - Carduri pentru congrese, simularea admiterii, workshop-uri, campanii de donare de sânge
 5. **`noutati.html`** — **Noutăți & Articole**:
-   - Ghidul bobocului, comunicate oficiale, oportunități de internship, burse și cazare
-   - Formular de abonare la newsletter
-6. **`contact.html`** — **Contact & Înscriere Voluntari**:
-   - Formular complet de aplicare în asociație cu feedback instant
+   - Ghidul bobocului, comunicate oficiale, ateliere clinice, mobilități TransMed
+6. **`contact.html`** — **Contact & Sediu**:
+   - Formular direct de contact cu feedback instant
    - Adresă campus, birou asociație, program și canale de social media
    - Secțiune interactivă de Întrebări Frecvente (FAQ)
 

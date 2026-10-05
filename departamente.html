@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Departamente & Echipe – [Nume Asociație]</title>
-  <meta name="description" content="Descoperă departamentele asociației studențești: IT, PR, HR, Evenimente, Fundraising și Proiecte.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+  <title>Echipă & Structură – ASMO Oradea | FMF Oradea</title>
+  <meta name="description" content="Structura completă a Asociației Studenților Mediciniști din Oradea: Consiliul Director, Comitetele și Diviziile de suport organizațional din cadrul FMF Oradea.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><path d='M50 20 v60 M20 50 h60' stroke='white' stroke-width='14' stroke-linecap='round'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,16 +17,14 @@
   <div class="top-bar">
     <div class="container top-bar-content">
       <div class="top-bar-left">
-        <span class="top-badge">[Universitate / Facultate]</span>
-        <span class="top-info">📍 [Adresă Campus, Corp Clădire, Sală / Birou Asociație]</span>
+        <span class="top-badge">FMF Oradea</span>
+        <span class="top-info">Facultatea de Medicină și Farmacie • Piața 1 Decembrie nr. 10, Oradea</span>
       </div>
       <div class="top-bar-right">
-        <a href="mailto:contact@asociatie.ro" class="top-link">✉️ contact@asociatie.ro</a>
+        <a href="mailto:asmo.oradea@gmail.com" class="top-link">asmo.oradea@gmail.com</a>
         <div class="top-socials">
-          <a href="#" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="LinkedIn">IN</a>
-          <a href="#" aria-label="TikTok">TT</a>
+          <a href="https://www.instagram.com/asmo_oradea/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @asmo_oradea">IG</a>
+          <a href="https://www.facebook.com/asmo.oradea/" target="_blank" rel="noopener noreferrer" aria-label="Facebook ASMO Oradea">FB</a>
         </div>
       </div>
     </div>
@@ -36,20 +34,23 @@
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="index.html" class="brand-logo">
-        <div class="logo-badge">🌱</div>
+        <div class="logo-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </div>
         <div class="brand-text-group">
-          <span class="brand-title">[Acronim Asociație]</span>
-          <span class="brand-subtitle">Asociația Studențească [Nume Complet]</span>
+          <span class="brand-title">ASMO</span>
+          <span class="brand-subtitle">Asociația Studenților Mediciniști din Oradea</span>
         </div>
       </a>
 
       <nav class="nav-menu" id="navMenu">
         <a href="index.html" class="nav-link">Acasă</a>
-        <a href="despre.html" class="nav-link">Despre Noi</a>
-        <a href="departamente.html" class="nav-link active">Departamente</a>
+        <a href="departamente.html" class="nav-link active">Echipă & Structură</a>
         <a href="proiecte.html" class="nav-link">Proiecte & Evenimente</a>
         <a href="noutati.html" class="nav-link">Noutăți</a>
-        <a href="contact.html" class="btn btn-primary btn-sm">Devino Voluntar</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Contact</a>
       </nav>
 
       <button class="mobile-toggle" id="mobileToggle" aria-label="Comută meniul">
@@ -63,195 +64,627 @@
   <main>
     <!-- Page Hero Banner -->
     <section class="page-hero">
-      <div class="container">
-        <h1 class="page-hero-title">Departamentele Asociației</h1>
+      <div class="container reveal-on-scroll">
+        <div class="badge-friendly" style="background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.3); color: #ffffff; margin-bottom: 16px;">
+          <span class="pulse-dot" style="background: #38bdf8;"></span>
+          <span>Structura Organizațională ASMO</span>
+        </div>
+        <h1 class="page-hero-title">Echipa & Structura ASMO</h1>
         <p class="page-hero-subtitle">
-          Echipele noastre lucrează colaborativ. Fiecare departament are un coordonator dedicat și colegi seniori gata să te îndrume pas cu pas.
+          Toți membrii asociației reuniți pe o singură pagină: Consiliul Director, Comitetele și Diviziile de suport organizațional din cadrul FMF Oradea.
         </p>
-      </div>
-    </section>
 
-    <!-- Prezentare Departamente -->
-    <section class="section">
-      <div class="container">
-        <div class="cards-grid">
-          
-          <!-- Departament 1: PR & Media -->
-          <div class="card">
-            <span class="dept-badge">Creație & Imagine</span>
-            <h2 class="card-title">Relații Publice, Social Media & Design</h2>
-            <p class="card-text">
-              Dacă îți place să creezi conținut, să faci fotografii la evenimente, să editezi reels sau să scrii texte care prind la public, PR-ul este locul tău. 
-              Suntem vocea oficială a asociației în mediul online și în campus.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>Canva & Adobe Illustrator</li>
-                <li>Editare Video (CapCut / Premiere)</li>
-                <li>Copywriting & Strategie Social Media</li>
-                <li>Fotografie de Eveniment</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la PR →</a>
-            </div>
-          </div>
-
-          <!-- Departament 2: IT & Web -->
-          <div class="card">
-            <span class="dept-badge">Software & Tehnic</span>
-            <h2 class="card-title">IT, Web Development & Logistică Tehnică</h2>
-            <p class="card-text">
-              Echipa responsabilă de infrastructura digitală a asociației: dezvoltăm și actualizăm site-ul web, sistemele de votare la alegeri, 
-              formularele inteligente de înscriere și asigurăm suportul de sunet și lumini la conferințe.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>HTML / CSS / JavaScript</li>
-                <li>Găzduire Web & Domenii</li>
-                <li>Automatizări Google Sheets & Formulare</li>
-                <li>Sonorizare & Echipamente Audio-Video</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la IT →</a>
-            </div>
-          </div>
-
-          <!-- Departament 3: HR -->
-          <div class="card">
-            <span class="dept-badge">Oameni & Cultură</span>
-            <h2 class="card-title">Resurse Umane (HR) & Integrare</h2>
-            <p class="card-text">
-              Inima comunității noastre. HR-ul are grijă ca fiecare membru nou să se simtă binevenit, organizează interviurile de recrutare, 
-              ține evidența implicării voluntarilor și pregătește teambuilding-urile de neuitat la munte.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>Tehnici de Interviu & Feedback</li>
-                <li>Organizare Teambuilding & Jocuri</li>
-                <li>Medierea Conflictelor</li>
-                <li>Motivarea Echipelor</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la HR →</a>
-            </div>
-          </div>
-
-          <!-- Departament 4: Evenimente & Logistică -->
-          <div class="card">
-            <span class="dept-badge">Operațional</span>
-            <h2 class="card-title">Management de Evenimente & Logistică</h2>
-            <p class="card-text">
-              Creatorii acțiunii din spatele scenei! Planifică fiecare detaliu: rezervarea amfiteatrelor, ecusoane, diplome, catering, 
-              ghidarea invitaților și asigurarea bunei desfășurări a fiecărui bal, congres sau festival universitar.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>Planificare Bugetară & Timing</li>
-                <li>Relația cu Furnizorii & Sălile</li>
-                <li>Rezolvarea Crizelor pe Teren</li>
-                <li>Protocoale de Protocol & Oaspeți</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la Evenimente →</a>
-            </div>
-          </div>
-
-          <!-- Departament 5: Fundraising & Parteneriate -->
-          <div class="card">
-            <span class="dept-badge">Business & Corporate</span>
-            <h2 class="card-title">Fundraising & Relația cu Companiile</h2>
-            <p class="card-text">
-              Echipa care aduce resursele necesare proiectelor noastre. Contactăm companii mari, negociem pachete de sponsorizare, 
-              aducem premii pentru concursuri și reduceri exclusive pentru toți membrii asociației.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>Scrierea Mapelor de Sponsorizare</li>
-                <li>Tehnici de Vânzare & Pitching</li>
-                <li>Negociere Contracte</li>
-                <li>Relații Profesionale B2B</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la Fundraising →</a>
-            </div>
-          </div>
-
-          <!-- Departament 6: Educație & Proiecte Sociale -->
-          <div class="card">
-            <span class="dept-badge">Impact Comunitar</span>
-            <h2 class="card-title">Proiecte Educaționale & Campanii Civice</h2>
-            <p class="card-text">
-              Dedicat inițiativelor care fac bine în comunitate: campanii de donare de sânge, strângere de haine și jucării, 
-              workshop-uri de orientare profesională pentru liceeni și ateliere de ecologie în campus.
-            </p>
-            <div style="margin-bottom: 16px;">
-              <strong style="font-size: 0.85rem; color: var(--text-title); display: block; margin-bottom: 6px;">Ce vei învăța:</strong>
-              <ul class="dept-skills-list">
-                <li>Scriere Proiecte de Finanțare</li>
-                <li>Coordonare Voluntari pe Teren</li>
-                <li>Campanii Sociale & Caritabile</li>
-                <li>Comunicare cu Beneficiarii</li>
-              </ul>
-            </div>
-            <div style="border-top: 1px solid var(--border-light); padding-top: 14px; margin-top: auto; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 0.85rem; color: var(--brand-primary); font-weight: 700;">🟢 Recrutări Deschise</span>
-              <a href="contact.html" class="btn btn-secondary btn-sm">Aplică la Proiecte →</a>
-            </div>
-          </div>
-
+        <!-- Navigare Rapidă între Piloni -->
+        <div style="display: flex; justify-content: center; gap: 12px; margin-top: 28px; flex-wrap: wrap;">
+          <a href="#conducere" class="btn btn-white btn-sm">Consiliul Director (5)</a>
+          <a href="#comitete" class="btn btn-white btn-sm">Comitete (5)</a>
+          <a href="#divizii" class="btn btn-white btn-sm">Divizii de Suport (6)</a>
         </div>
       </div>
     </section>
 
-    <!-- Cum funcționează implicarea -->
-    <section class="section section-alt">
-      <div class="container" style="max-width: 800px; text-align: center;">
-        <span class="pill-tag">Întrebare Frecventă</span>
-        <h2 class="section-title">Trebuie să aleg un singur departament?</h2>
-        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 28px;">
-          Nu! În cadrul asociației încurajăm colaborarea. Poți face parte din departamentul principal de PR, dar să ajuți la sonorizare cu IT-ul 
-          sau la logistica unui bal. Ești liber să experimentezi și să îți descoperi pasiunile!
-        </p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Înscrie-te ca Voluntar Acum</a>
+    <!-- Sticky Quick Navigation Bar -->
+    <div class="sticky-subnav">
+      <div class="container sticky-subnav-inner">
+        <span class="quick-jump-label">Navigare Structură:</span>
+        <div class="sticky-subnav-links">
+          <a href="#conducere" class="sticky-subnav-btn">Consiliul Director <span class="sticky-subnav-count">5</span></a>
+          <a href="#comitete" class="sticky-subnav-btn">Comitete <span class="sticky-subnav-count">5</span></a>
+          <a href="#divizii" class="sticky-subnav-btn">Divizii de Suport <span class="sticky-subnav-count">6</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         1. CONSILIUL DIRECTOR (Conducerea Executivă)
+         =================================================================== -->
+    <section class="section" id="conducere">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="pill-tag">Conducerea Executivă</span>
+          <h2 class="section-title">Consiliul Director</h2>
+          <p class="section-subtitle">
+            Echipa aleasă pentru coordonarea strategică, administrativă și reprezentarea oficială a studenților mediciniști în forurile universitare.
+          </p>
+        </div>
+
+        <!-- Salt rapid în cadrul Conducerii -->
+        <div class="person-quick-jump reveal-on-scroll">
+          <span class="quick-jump-label">Salt rapid:</span>
+          <a href="#cd-presedinte" class="quick-jump-pill">Jazmin Eleneș (Președinte)</a>
+          <a href="#cd-vpe" class="quick-jump-pill">Maria Roja-Petruș (VPE)</a>
+          <a href="#cd-vpi" class="quick-jump-pill">Andreea Tanasă (VPI)</a>
+          <a href="#cd-vpf" class="quick-jump-pill">Matei Mărginean (VPF)</a>
+          <a href="#cd-sg" class="quick-jump-pill">Răzvan Tîrla (SG)</a>
+        </div>
+
+        <!-- 1. Președinte: Jazmin Eleneș -->
+        <div class="member-showcase-card reveal-on-scroll" id="cd-presedinte">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Președinție</span>
+              <h3 class="ssmb-div-title">Președinte ASMO</h3>
+              <p class="ssmb-desc">
+                Președintele reprezintă oficial <strong>Asociația Studenților Mediciniști din Oradea</strong> în raport cu conducerea Facultății de Medicină și Farmacie, Senatul Universității din Oradea, forurile academice și partenerii externi.
+              </p>
+              <p class="ssmb-desc">
+                Coordonează <strong>strategia generală a asociației</strong>, veghează la respectarea statutului și prezidează ședințele Consiliului Director și ale Adunării Generale, asigurând direcția de dezvoltare a întregii comunități studențești.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/presedinte-jazmin-elenes.png" alt="Jazmin Eleneș – Președinte ASMO" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Jazmin Eleneș</h4>
+              <span class="ssmb-coord-role">Președinte ASMO</span>
+              <p class="ssmb-coord-meta">
+                Reprezentare oficială în Senatul Universitar, Consiliul FMF și coordonare strategică a asociației.
+              </p>
+              <span class="ssmb-coord-badge">Președinte</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Vicepreședinte Relații Externe: Maria Roja-Petruș -->
+        <div class="member-showcase-card reveal-on-scroll" id="cd-vpe">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Relații Externe</span>
+              <h3 class="ssmb-div-title">Vicepreședinte Relații Externe (VPE)</h3>
+              <p class="ssmb-desc">
+                Vicepreședintele pe Relații Externe este responsabil de legătura directă cu <strong>federația națională FASMR</strong>, cu celelalte asociații de studenți mediciniști din centrele universitare din țară și cu autoritățile publice locale.
+              </p>
+              <p class="ssmb-desc">
+                Asigură <strong>reprezentarea delegației orădene la Adunările Generale FASMR</strong>, facilitează parteneriate inter-asociaționale și sprijină racordarea activității ASMO la inițiativele naționale și internaționale.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/vpe-maria-roja-petrus.png" alt="Maria Roja-Petruș – Vicepreședinte Relații Externe" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Maria Roja-Petruș</h4>
+              <span class="ssmb-coord-role">VPE • Vicepreședinte Relații Externe</span>
+              <p class="ssmb-coord-meta">
+                Relația oficială cu federația națională FASMR, reprezentare externă și parteneriate instituționale.
+              </p>
+              <span class="ssmb-coord-badge">VPE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Vicepreședinte Relații Interne: Andreea Tanasă -->
+        <div class="member-showcase-card reveal-on-scroll" id="cd-vpi">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Relații Interne</span>
+              <h3 class="ssmb-div-title">Vicepreședinte Relații Interne (VPI)</h3>
+              <p class="ssmb-desc">
+                Vicepreședintele pe Relații Interne monitorizează și sprijină desfășurarea activității tuturor <strong>comitetelor și diviziilor de suport</strong> din cadrul ASMO, asigurând coeziunea și buna funcționare a echipei extinse.
+              </p>
+              <p class="ssmb-desc">
+                Facilitează <strong>comunicarea inter-departamentală armonioasă</strong>, implicarea voluntarilor în proiecte și identificarea soluțiilor optime pentru nevoile organizatorice interne ale membrilor asociației.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/vpi-andreea-tanasa.png" alt="Andreea Tanasă – Vicepreședinte Relații Interne" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Andreea Tanasă</h4>
+              <span class="ssmb-coord-role">VPI • Vicepreședinte Relații Interne</span>
+              <p class="ssmb-coord-meta">
+                Coordonarea comitetelor, a diviziilor de suport și sprijinirea comunității de voluntari ASMO.
+              </p>
+              <span class="ssmb-coord-badge">VPI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Vicepreședinte Financiar Interimar: Matei Mărginean -->
+        <div class="member-showcase-card reveal-on-scroll" id="cd-vpf">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Financiar</span>
+              <h3 class="ssmb-div-title">Vicepreședinte Financiar Interimar (VPF)</h3>
+              <p class="ssmb-desc">
+                Vicepreședintele Financiar administrează fondurile asociației, întocmește <strong>bugetele de venituri și cheltuieli</strong> și garantează transparența deplină a utilizării resurselor financiare.
+              </p>
+              <p class="ssmb-desc">
+                Verifică <strong>deconturile fiecărui proiect</strong>, centralizează documentele justificative contabile și colaborează strâns cu divizia de fundraising pentru susținerea bugetară a fiecărei inițiative studențești.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/vpf-matei-marginean.png" alt="Matei Mărginean – Vicepreședinte Financiar Interimar" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Matei Mărginean</h4>
+              <span class="ssmb-coord-role">VPF • Vicepreședinte Financiar Interimar</span>
+              <p class="ssmb-coord-meta">
+                Gestiunea bugetară a asociației, evidența deconturilor proiectelor și administrarea financiară.
+              </p>
+              <span class="ssmb-coord-badge">VPF</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Secretar General: Răzvan Tîrla -->
+        <div class="member-showcase-card reveal-on-scroll" id="cd-sg">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Secretariat & Administrație</span>
+              <h3 class="ssmb-div-title">Secretar General (SG)</h3>
+              <p class="ssmb-desc">
+                Secretarul General este responsabil de <strong>evidența documentelor oficiale</strong> ale asociației, redactarea proceselor-verbale ale ședințelor Consiliului Director și ale Adunării Generale, precum și managementul arhivei.
+              </p>
+              <p class="ssmb-desc">
+                Coordonează <strong>fluxul administrativ intern</strong>, actualizează baza de date a membrilor activi și gestionează corespondența oficială, asigurând respectarea procedurilor statutare ale organizației.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/sg-razvan-tirla.png" alt="Răzvan Tîrla – Secretar General" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Răzvan Tîrla</h4>
+              <span class="ssmb-coord-role">SG • Secretar General</span>
+              <p class="ssmb-coord-meta">
+                Evidența documentelor oficiale, redactarea proceselor-verbale statutare și arhiva administrativă.
+              </p>
+              <span class="ssmb-coord-badge">SG</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         2. COMITETELE ASMO
+         =================================================================== -->
+    <section class="section section-alt" id="comitete">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="pill-tag">Domenii Medicale de Interes</span>
+          <h2 class="section-title">Comitetele ASMO</h2>
+          <p class="section-subtitle">
+            Comitetele specializate pe ramuri de activitate medicală, prevenție sanitară comunitară, educație clinică și mobilități internaționale.
+          </p>
+        </div>
+
+        <!-- Salt rapid în cadrul Comitetelor -->
+        <div class="person-quick-jump reveal-on-scroll">
+          <span class="quick-jump-label">Salt rapid:</span>
+          <a href="#com-scoph" class="quick-jump-pill">SCOPH (Damiana Anițulesei • LPO)</a>
+          <a href="#com-scome" class="quick-jump-pill">SCOME (Diana Sandu • LOME)</a>
+          <a href="#com-scora" class="quick-jump-pill">SCORA (Maria Abrudan • LORA)</a>
+          <a href="#com-scorp" class="quick-jump-pill">SCORP (Victor Budișca-Hasan • LORP)</a>
+          <a href="#com-score" class="quick-jump-pill">SCOPE / SCORE (Ioana Murguleț • LORE)</a>
+        </div>
+
+        <!-- 1. SCOPH: Damiana Anițulesei -->
+        <div class="member-showcase-card reveal-on-scroll" id="com-scoph">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Sănătate Publică</span>
+              <h3 class="ssmb-div-title">Comitetul pentru Sănătate Publică (SCOPH)</h3>
+              <p class="ssmb-desc">
+                Comitetul pentru Sănătate Publică derulează <strong>campanii de prevenție, conștientizare și educație medicală</strong> dedicate comunității orădene și cetățenilor din județul Bihor, adresând factorii majori de risc sanitar.
+              </p>
+              <p class="ssmb-desc">
+                Printre activitățile principale se regăsesc <strong>campaniile de donare de sânge</strong> („Donează sânge! Fii erou!”), acțiunile de măsurare a tensiunii arteriale și a glicemiei, conștientizarea diabetului și caravanele medicale de informare sanitară.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/lpo-damiana-anitulesei.png" alt="Damiana Anițulesei – LPO" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Damiana Anițulesei</h4>
+              <span class="ssmb-coord-role">LPO • Ofițer Local Sănătate Publică</span>
+              <p class="ssmb-coord-meta">
+                Coordonează campaniile de prevenție, caravanele medicale și acțiunile de sănătate publică din Bihor.
+              </p>
+              <span class="ssmb-coord-badge">LPO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. SCOME: Diana Sandu -->
+        <div class="member-showcase-card reveal-on-scroll" id="com-scome">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Educație Medicală</span>
+              <h3 class="ssmb-div-title">Comitetul pentru Educație Medicală (SCOME)</h3>
+              <p class="ssmb-desc">
+                Comitetul pentru Educație Medicală susține <strong>dezvoltarea profesională continuă și abilitățile practice</strong> ale studenților de la FMF Oradea, completând curicula universitară prin instruire practică.
+              </p>
+              <p class="ssmb-desc">
+                Organizează <strong>workshop-uri practice de abilități clinice și chirurgicale</strong> (tehnici de noduri și suturi, manevre de prim ajutor), conferințe medicale studențești, prezentări științifice și evenimente dedicate succesului academic universitar.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/lome-diana-sandu.png" alt="Diana Sandu – LOME" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Diana Sandu</h4>
+              <span class="ssmb-coord-role">LOME • Ofițer Local Educație Medicală</span>
+              <p class="ssmb-coord-meta">
+                Gestionează proiectele de instruire clinică, atelierele chirurgicale și evenimentele de educație medicală.
+              </p>
+              <span class="ssmb-coord-badge">LOME</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. SCORA: Maria Abrudan -->
+        <div class="member-showcase-card reveal-on-scroll" id="com-scora">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Sănătate Reproductivă</span>
+              <h3 class="ssmb-div-title">Comitetul pentru Sănătatea Reproducerii & HIV/SIDA (SCORA)</h3>
+              <p class="ssmb-desc">
+                Comitetul promovează <strong>educația sanitară bazată pe dovezi științifice</strong> privind sănătatea reproducerii, prevenția infecțiilor cu transmitere sexuală și importanța controalelor preventive periodice în rândul tinerilor.
+              </p>
+              <p class="ssmb-desc">
+                Voluntarii susțin <strong>ateliere interactive în liceele orădene</strong>, marchează Ziua Mondială de Luptă Împotriva HIV/SIDA, informează cu privire la prevenția cancerului de col uterin prin vaccinarea anti-HPV și derulează acțiuni dedicate sănătății masculine (Movember).
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/lora-maria-abrudan.png" alt="Maria Abrudan – LORA" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Maria Abrudan</h4>
+              <span class="ssmb-coord-role">LORA • Ofițer Local Sănătate Reproductivă</span>
+              <p class="ssmb-coord-meta">
+                Coordonează atelierele de educație sanitară din licee, campaniile HIV/SIDA și prevenția bolilor reproductive.
+              </p>
+              <span class="ssmb-coord-badge">LORA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. SCORP: Victor Budișca-Hasan -->
+        <div class="member-showcase-card reveal-on-scroll" id="com-scorp">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Drepturile Omului & Pace</span>
+              <h3 class="ssmb-div-title">Comitetul pentru Drepturile Omului & Pace (SCORP)</h3>
+              <p class="ssmb-desc">
+                Comitetul constituie <strong>punctul de sprijin umanitar și caritabil</strong> al asociației, promovând drepturile pacienților, etica în practica medicală, egalitatea și susținerea activă a categoriilor sociale defavorizate.
+              </p>
+              <p class="ssmb-desc">
+                Organizează <strong>acțiuni caritabile dedicate copiilor spitalizați</strong> (secțiile de pediatrie și oncologie), proiectul tradițional Spitalul de Ursuleți pentru reducerea anxietății celor mici față de actul medical, precum și acțiuni de suport comunitar.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/lorp-victor-budisca-hasan.png" alt="Victor Budișca-Hasan – LORP" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Victor Budișca-Hasan</h4>
+              <span class="ssmb-coord-role">LORP • Ofițer Local Drepturile Omului</span>
+              <p class="ssmb-coord-meta">
+                Coordonează acțiunile caritabile, inițiativele pe secțiile de pediatrie și proiectele umanitare ASMO.
+              </p>
+              <span class="ssmb-coord-badge">LORP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. SCORE / SCOPE: Ioana Murguleț -->
+        <div class="member-showcase-card reveal-on-scroll" id="com-score">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Schimburi Clinice & Cercetare</span>
+              <h3 class="ssmb-div-title">Comitetul pentru Schimburi Clinice & Cercetare (SCOPE / SCORE)</h3>
+              <p class="ssmb-desc">
+                Comitetul facilitează <strong>mobilitățile naționale și internaționale</strong> pentru studenții mediciniști din Oradea, prin intermediul parteneriatelor federației naționale FASMR și a federației internaționale IFMSA.
+              </p>
+              <p class="ssmb-desc">
+                Oferă studenților oportunitatea de a efectua <strong>stagii clinice și de cercetare de o lună</strong> în spitale universitare partenere din întreaga lume, schimburile academice naționale TransMed și asigură primirea și integrarea studenților internaționali la Oradea.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/lore-ioana-murgulet.png" alt="Ioana Murguleț – LORE" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Ioana Murguleț</h4>
+              <span class="ssmb-coord-role">LORE • Ofițer Local Schimburi & Cercetare</span>
+              <p class="ssmb-coord-meta">
+                Gestionează stagiile clinice internaționale IFMSA, schimburile TransMed și integrarea studenților străini.
+              </p>
+              <span class="ssmb-coord-badge">LORE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. DIVIZIILE DE SUPORT
+         =================================================================== -->
+    <section class="section" id="divizii">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="pill-tag">Infrastructură & Operațiuni</span>
+          <h2 class="section-title">Diviziile de Suport ASMO</h2>
+          <p class="section-subtitle">
+            Echipele operative care asigură logistica, resursele financiare, tehnologia, identitatea vizuală și comunicarea asociației.
+          </p>
+        </div>
+
+        <!-- Salt rapid în cadrul Diviziilor -->
+        <div class="person-quick-jump reveal-on-scroll">
+          <span class="quick-jump-label">Salt rapid:</span>
+          <a href="#div-fundraising" class="quick-jump-pill">Fundraising (Ivona Ionică)</a>
+          <a href="#div-hr-logistica" class="quick-jump-pill">HR & Logistică (Nely Nedelcu)</a>
+          <a href="#div-grafica-it" class="quick-jump-pill">Grafică și IT (Daniel Iancu)</a>
+          <a href="#div-pr-marketing" class="quick-jump-pill">PR & Marketing (Tudor Ilinca)</a>
+          <a href="#div-capacity-building" class="quick-jump-pill">Capacity Building (Sara Ionuț)</a>
+          <a href="#div-entertainment" class="quick-jump-pill">Entertainment (Ruxandra Moza)</a>
+        </div>
+
+        <!-- 1. Fundraising: Ivona Ionică -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-fundraising">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Fundraising</span>
+              <h3 class="ssmb-div-title">Divizia de Fundraising (FR)</h3>
+              <p class="ssmb-desc">
+                Divizia de Fundraising are drept misiune principală <strong>asigurarea resurselor financiare și a parteneriatelor materiale</strong> necesare pentru implementarea optimă a fiecărui proiect organizat de ASMO.
+              </p>
+              <p class="ssmb-desc">
+                Activitatea cuprinde <strong>elaborarea pachetelor și contractelor de sponsorizare</strong>, identificarea potențialilor parteneri comerciali din industria medicală și mediul de afaceri, negocierea beneficiilor și păstrarea legăturilor de durată cu susținătorii asociației.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-fundraising-ivona-ionica.png" alt="Ivona Ionică – Fundraising" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Ivona Ionică</h4>
+              <span class="ssmb-coord-role">Coordonator Divizia Fundraising</span>
+              <p class="ssmb-coord-meta">
+                Relația cu sponsorii comerciali, dosare de finanțare pentru proiecte și parteneriatele economice ASMO.
+              </p>
+              <span class="ssmb-coord-badge">Fundraising</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. HR & Logistică: Nely Nedelcu -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-hr-logistica">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">HR & Logistică</span>
+              <h3 class="ssmb-div-title">Divizia de HR & Logistică</h3>
+              <p class="ssmb-desc">
+                Divizia de HR & Logistică reprezintă nucleul administrativ care se asigură de <strong>organizarea comunității de voluntari</strong> și de punerea la dispoziție a infrastructurii materiale pentru evenimente.
+              </p>
+              <p class="ssmb-desc">
+                Echipa gestionează <strong>baza de date și orele de activitate ale voluntarilor</strong>, procedurile de recrutare și integrare, asigurând concomitent rezervarea sălilor, aprovizionarea cu materiale și asistența logistică la fiecare acțiune.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-hr-logistica-nely-nedelcu.png" alt="Nely Nedelcu – HR & Logistică" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Nely Nedelcu</h4>
+              <span class="ssmb-coord-role">Coordonator Divizia HR & Logistică</span>
+              <p class="ssmb-coord-meta">
+                Evidența voluntarilor, organizarea internă și asigurarea bazei materiale pentru manifestările ASMO.
+              </p>
+              <span class="ssmb-coord-badge">HR & Logistică</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Grafică și IT: Daniel Iancu -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-grafica-it">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Grafică & IT</span>
+              <h3 class="ssmb-div-title">Divizia de Grafică și IT</h3>
+              <p class="ssmb-desc">
+                Divizia de Grafică și IT asigură <strong>identitatea vizuală distinctă și infrastructura tehnică digitală</strong> a asociației, susținând vizual fiecare campanie și proiect studențesc.
+              </p>
+              <p class="ssmb-desc">
+                Echipa creează <strong>afișe, machete grafice și materiale de comunicare</strong> conforme ghidului vizual, administrează platformele digitale și site-ul web ASMO și oferă asistență tehnică audio-video și IT în timpul conferințelor și atelierelor.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-grafica-it-daniel-iancu.png" alt="Daniel Iancu – Grafică și IT" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Daniel Iancu</h4>
+              <span class="ssmb-coord-role">Coordonator Divizia Grafică și IT</span>
+              <p class="ssmb-coord-meta">
+                Crearea identității vizuale, materiale de promovare, mentenanță web și suport tehnic IT.
+              </p>
+              <span class="ssmb-coord-badge">Grafică & IT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. PR & Marketing: Tudor Ilinca -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-pr-marketing">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">PR & Marketing</span>
+              <h3 class="ssmb-div-title">Divizia de PR & Marketing</h3>
+              <p class="ssmb-desc">
+                Divizia de Relații Publice și Marketing este <strong>canalul principal de comunicare și imagine</strong> al asociației în mediul universitar orădean și pe rețelele sociale oficiale (@asmo_oradea pe Instagram și Facebook).
+              </p>
+              <p class="ssmb-desc">
+                Membrii diviziei redactează <strong>textele de promovare, comunicatele oficiale de presă</strong>, elaborează strategia de distribuție online a evenimentelor și mențin dialogul deschis și prompt cu studenții mediciniști.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-pr-marketing-tudor-ilinca.png" alt="Tudor Ilinca – PR & Marketing" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Tudor Ilinca</h4>
+              <span class="ssmb-coord-role">Coordonator Divizia PR & Marketing</span>
+              <p class="ssmb-coord-meta">
+                Administrarea conturilor de Social Media, redactarea comunicatelor și promovarea imaginii publice ASMO.
+              </p>
+              <span class="ssmb-coord-badge">PR & Marketing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Capacity Building: Sara Ionuț -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-capacity-building">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Capacity Building</span>
+              <h3 class="ssmb-div-title">Divizia de Capacity Building</h3>
+              <p class="ssmb-desc">
+                Divizia de Capacity Building este dedicată <strong>dezvoltării personale și formării de competențe transversale (soft skills)</strong> pentru voluntarii asociației, prin metode de educație non-formală.
+              </p>
+              <p class="ssmb-desc">
+                Organizează <strong>sesiuni de training, ateliere de comunicare și vorbit în public</strong>, cursuri de leadership, managementul timpului și teambuilding-uri menite să pregătească viitorii lideri din domeniul medical.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-capacity-building-sara-ionut.png" alt="Sara Ionuț – Capacity Building" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Sara Ionuț</h4>
+              <span class="ssmb-coord-role">Coordonator Divizia Capacity Building</span>
+              <p class="ssmb-coord-meta">
+                Dezvoltarea abilităților de comunicare, training-uri de leadership și ateliere non-formale pentru voluntari.
+              </p>
+              <span class="ssmb-coord-badge">Capacity Building</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Entertainment Interimar: Ruxandra Moza -->
+        <div class="member-showcase-card reveal-on-scroll" id="div-entertainment">
+          <div class="ssmb-panel-grid">
+            <div class="ssmb-content-side">
+              <span class="ssmb-div-badge">Entertainment</span>
+              <h3 class="ssmb-div-title">Divizia de Entertainment Interimar</h3>
+              <p class="ssmb-desc">
+                Divizia de Entertainment aduce studenții împreună dincolo de amfiteatre și săli de laborator, prin <strong>organizarea manifestărilor festive, sociale și recreative</strong> tradiționale din viața universitară.
+              </p>
+              <p class="ssmb-desc">
+                Echipa coordonează <strong>Balul Bobocilor Mediciniști, galele festive</strong>, serile sociale și activitățile de relaxare care întăresc spiritul de comunitate și creează amintiri memorabile pentru toți studenții facultății.
+              </p>
+            </div>
+
+            <div class="ssmb-vertical-divider"></div>
+
+            <div class="ssmb-coord-side">
+              <div class="ssmb-coord-avatar-wrap">
+                <img src="images/team/div-entertainment-ruxandra-moza.png" alt="Ruxandra Moza – Entertainment" class="ssmb-coord-img" loading="lazy">
+              </div>
+              <h4 class="ssmb-coord-name">Ruxandra Moza</h4>
+              <span class="ssmb-coord-role">Coordonator Interimar Divizia Entertainment</span>
+              <p class="ssmb-coord-meta">
+                Organizarea Balului Bobocilor Mediciniști, serilor festive și activităților de relaxare studențească.
+              </p>
+              <span class="ssmb-coord-badge">Entertainment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Butoane Acțiune Finală -->
+        <div style="text-align: center; margin-top: 48px; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;" class="reveal-on-scroll">
+          <a href="contact.html" class="btn btn-primary btn-lg">Contactează Asociația ASMO</a>
+          <a href="proiecte.html" class="btn btn-secondary btn-lg">Explorează Proiectele ASMO →</a>
+        </div>
+
       </div>
     </section>
   </main>
 
-  <!-- Footer Comun -->
+  <!-- Footer Instituțional ASMO Oradea -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col">
         <div class="footer-brand">
-          <span style="font-size: 1.8rem;">🌱</span>
+          <div class="logo-badge" style="background: rgba(255, 255, 255, 0.15); width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
           <div>
-            <h3 class="footer-brand-title">[Acronim Asociație]</h3>
-            <span class="footer-brand-sub">Asociația Studențească [Nume]</span>
+            <h3 class="footer-brand-title">ASMO Oradea</h3>
+            <span class="footer-brand-sub">Asociația Studenților Mediciniști din Oradea</span>
           </div>
         </div>
         <p class="footer-motto">
-          Organizație studențească independentă, activă în cadrul [Nume Facultate / Universitate], 
-          dedicată dezvoltării personale și profesionale a comunității noastre.
+          Organizație studențească independentă ce reprezintă studenții Facultății de Medicină și Farmacie din cadrul Universității din Oradea. Membru fondator FASMR și afiliat IFMSA.
         </p>
         <div class="footer-social-row">
-          <a href="#" class="footer-social-btn" aria-label="Instagram">IG</a>
-          <a href="#" class="footer-social-btn" aria-label="Facebook">FB</a>
-          <a href="#" class="footer-social-btn" aria-label="LinkedIn">IN</a>
-          <a href="#" class="footer-social-btn" aria-label="TikTok">TT</a>
+          <a href="https://www.instagram.com/asmo_oradea/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram @asmo_oradea">IG</a>
+          <a href="https://www.facebook.com/asmo.oradea/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook ASMO Oradea">FB</a>
         </div>
       </div>
 
@@ -259,41 +692,46 @@
         <h4 class="footer-heading">Navigare Rapidă</h4>
         <ul class="footer-nav">
           <li><a href="index.html">Acasă</a></li>
-          <li><a href="despre.html">Despre Noi & Misiune</a></li>
-          <li><a href="departamente.html">Departamente & Echipe</a></li>
+          <li><a href="departamente.html">Echipă & Structură</a></li>
           <li><a href="proiecte.html">Proiecte & Evenimente</a></li>
-          <li><a href="noutati.html">Noutăți & Articole</a></li>
-          <li><a href="contact.html">Contact & Înscrieri</a></li>
+          <li><a href="noutati.html">Noutăți & Inițiative</a></li>
+          <li><a href="contact.html">Contact & Sediu</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Departamente</h4>
+        <h4 class="footer-heading">Structură Organizațională</h4>
         <ul class="footer-nav">
-          <li><a href="departamente.html">Relații Publice & Media</a></li>
-          <li><a href="departamente.html">IT & Web Development</a></li>
-          <li><a href="departamente.html">Resurse Umane (HR)</a></li>
-          <li><a href="departamente.html">Evenimente & Logistică</a></li>
-          <li><a href="departamente.html">Parteneriate & Sponsorizări</a></li>
+          <li><a href="departamente.html#conducere">Consiliul Director (5)</a></li>
+          <li><a href="departamente.html#comitete">Comitetele ASMO (5)</a></li>
+          <li><a href="departamente.html#divizii">Diviziile de Suport (6)</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Sediu & Contact Oficial</h4>
-        <ul class="footer-contact-list">
-          <li>📍 [Nume Universitate], Corpul [A/B/C], Sala [101]</li>
-          <li>[Adresă completă: Stradă, Număr, Oraș]</li>
-          <li>✉️ contact@asociatie.ro</li>
-          <li>📞 +40 700 000 000</li>
-          <li>🕒 Program Birou: Luni - Vineri, 12:00 - 18:00</li>
-        </ul>
+        <h4 class="footer-heading">Contact Direct</h4>
+        <div class="footer-contact-item">
+          <div class="footer-contact-text">
+            <span>Piața 1 Decembrie nr. 10, Oradea</span>
+            <small>Sediul ASMO din cadrul FMF Oradea</small>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <div class="footer-contact-text">
+            <a href="mailto:asmo.oradea@gmail.com" class="footer-link">asmo.oradea@gmail.com</a>
+            <small>Pentru colaborări oficiale și întrebări</small>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container footer-bottom-content">
-        <p>© 2026 [Nume Asociație Studențească]. Toate drepturile rezervate.</p>
-        <p>Template modular, curat și ușor de modificat.</p>
+    <div class="container footer-bottom">
+      <p class="copyright">
+        © 2026 ASMO – Asociația Studenților Mediciniști din Oradea. Toate drepturile rezervate.
+      </p>
+      <div class="footer-bottom-links">
+        <a href="index.html">Acasă</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>

@@ -1,53 +1,51 @@
 /* ==========================================================================
-   TEMPLATE SITE ASOCIAȚIE STUDENȚEASCĂ
-   Design System: Cald, Prietenos, Rotunjit & Uman
-   
-   👉 CUM SCHIMBI CULORILE PENTRU ASOCIAȚIA TA:
-   Modifică valorile de mai jos din secțiunea :root (ex: --brand-primary).
+   ASMO ORADEA - Asociația Studenților Mediciniști din Oradea
+   Design System: Cald, Medical, Prietenos, Rotunjit & Uman
+   Facultatea de Medicină și Farmacie (FMF) - Universitatea din Oradea
    ========================================================================== */
 
 :root {
-  /* 🎨 PALETA DE CULORI (Personalizabilă) */
-  --brand-primary: #15803d;        /* Verde universitar clasic (poți schimba cu albastru #1d4ed8, vișiniu #991b1b etc.) */
-  --brand-primary-hover: #166534;  /* Nuanță mai închisă la hover */
-  --brand-primary-soft: #f0fdf4;   /* Ton pastel pentru fundaluri carduri */
-  --brand-primary-border: #bbf7d0; /* Borduri subtile */
+  /* PALETA DE CULORI ASMO ORADEA (Medical Blue & Cyan) */
+  --brand-primary: #0284c7;        /* Albastru medical ASMO / FASMR */
+  --brand-primary-hover: #0369a1;  /* Nuanță mai profundă la hover */
+  --brand-primary-soft: #f0f9ff;   /* Ton pastel pentru fundaluri carduri */
+  --brand-primary-border: #bae6fd; /* Borduri subtile cyan */
   
-  --brand-accent: #0284c7;         /* Accent secundar (ex: linkuri / categorii) */
-  --brand-accent-soft: #e0f2fe;
+  --brand-accent: #0d9488;         /* Teal medical */
+  --brand-accent-soft: #ccfbf1;
 
   --color-warm-gold: #f59e0b;
-  --color-tag-bg: #f8fafc;
+  --color-medical-red: #ef4444;    /* Pentru campanii donare de sânge / cruce */
 
-  /* 📄 FUNDALURI & TEXTE */
-  --bg-page: #fbfdfb;              /* Alb cald, relaxant pentru ochi */
+  /* FUNDALURI & TEXTE */
+  --bg-page: #f8fafc;              /* Alb-gri cald, relaxant pentru ochi */
   --bg-white: #ffffff;             /* Alb imaculat pentru carduri */
-  --bg-subtle: #f3f6f4;            /* Gri-verde foarte deschis pentru secțiuni alternate */
-  --bg-dark-footer: #0c1a11;       /* Verde închis/cărbune pentru footer */
+  --bg-subtle: #f1f5f9;            /* Ton deschis pentru secțiuni alternate */
+  --bg-dark-footer: #082238;       /* Bleumarin medical pentru footer */
 
-  --text-title: #111827;           /* Text titluri (contrast ridicat, cald) */
-  --text-main: #374151;            /* Text conținut */
-  --text-muted: #6b7280;           /* Text secundar/subtitluri */
-  --text-light: #9ca3af;
+  --text-title: #0f172a;           /* Text titluri (contrast ridicat, cald) */
+  --text-main: #334155;            /* Text conținut */
+  --text-muted: #64748b;           /* Text secundar/subtitluri */
+  --text-light: #94a3b8;
 
-  --border-light: #e5e7eb;
-  --border-soft: #d1d5db;
+  --border-light: #e2e8f0;
+  --border-soft: #cbd5e1;
 
-  /* 🔤 TIPOGRAFIE ROTUNJITĂ & PRIETENOASĂ */
+  /* TIPOGRAFIE ROTUNJITĂ & PRIETENOASĂ */
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 
-  /* 🔘 FORME ROTUNJITE (Human & Friendly) */
+  /* FORME ROTUNJITE (Human & Friendly) */
   --radius-xs: 8px;
   --radius-sm: 12px;
   --radius-md: 18px;
   --radius-lg: 24px;
   --radius-pill: 9999px;
 
-  /* ☁️ UMBRE FINE & NATURALE */
+  /* UMBRE FINE & NATURALE */
   --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-card: 0 4px 18px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 12px 30px rgba(21, 128, 61, 0.12);
+  --shadow-hover: 0 12px 30px rgba(2, 132, 199, 0.14);
 
   --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -117,10 +115,10 @@ a:hover {
    ========================================================================== */
 .top-bar {
   background: var(--brand-primary-hover);
-  color: #e2f4e7;
+  color: #e0f2fe;
   font-size: 0.825rem;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .top-bar-content {
@@ -136,13 +134,13 @@ a:hover {
   color: #fff;
   padding: 3px 10px;
   border-radius: var(--radius-pill);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.75rem;
   margin-right: 8px;
 }
 
 .top-info {
-  color: #d1ead7;
+  color: #e0f2fe;
 }
 
 .top-bar-right {
@@ -152,8 +150,11 @@ a:hover {
 }
 
 .top-link {
-  color: #e2f4e7;
+  color: #e0f2fe;
   font-size: 0.825rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .top-link:hover {
@@ -163,20 +164,20 @@ a:hover {
 
 .top-socials {
   display: flex;
-  gap: 6px;
+  gap: 8px;
 }
 
 .top-socials a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 10px;
+  background: rgba(255, 255, 255, 0.18);
   color: #fff;
-  border-radius: 50%;
-  font-size: 0.7rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
   font-weight: 700;
+  transition: var(--transition);
 }
 
 .top-socials a:hover {
@@ -211,16 +212,16 @@ a:hover {
 }
 
 .logo-badge {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   background: var(--brand-primary-soft);
   border: 1.5px solid var(--brand-primary-border);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.1);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.12);
   transition: var(--transition);
 }
 
@@ -235,29 +236,30 @@ a:hover {
 
 .brand-title {
   font-family: var(--font-heading);
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--brand-primary);
   line-height: 1.15;
+  letter-spacing: 0.02em;
 }
 
 .brand-subtitle {
   font-size: 0.775rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
 }
 
 .nav-link {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-main);
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: var(--radius-pill);
   transition: var(--transition);
   position: relative;
@@ -355,14 +357,14 @@ a:hover {
 .btn-primary {
   background-color: var(--brand-primary);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.28);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
 }
 
 .btn-primary:hover {
   background-color: var(--brand-primary-hover);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(21, 128, 61, 0.38);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.38);
 }
 
 .btn-secondary {
@@ -384,15 +386,27 @@ a:hover {
 }
 
 .btn-white:hover {
-  background: #f0fdf4;
+  background: #f0f9ff;
   transform: translateY(-2px);
+}
+
+.btn-instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(253, 29, 29, 0.3);
+}
+
+.btn-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(253, 29, 29, 0.45);
+  color: #fff;
 }
 
 /* ==========================================================================
    Hero Section & Page Header
    ========================================================================== */
 .hero-home {
-  background: linear-gradient(135deg, #166534 0%, #15803d 50%, #16a34a 100%);
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #0ea5e9 100%);
   color: #ffffff;
   padding: 85px 0 105px;
   position: relative;
@@ -413,7 +427,7 @@ a:hover {
 
 .hero-content {
   text-align: center;
-  max-width: 860px;
+  max-width: 880px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -426,7 +440,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(8px);
-  padding: 6px 18px;
+  padding: 6px 20px;
   border-radius: var(--radius-pill);
   font-size: 0.85rem;
   font-weight: 600;
@@ -438,8 +452,8 @@ a:hover {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #86efac;
-  box-shadow: 0 0 10px #86efac;
+  background-color: #7dd3fc;
+  box-shadow: 0 0 10px #7dd3fc;
 }
 
 .hero-title {
@@ -452,7 +466,7 @@ a:hover {
 
 .hero-desc {
   font-size: clamp(1.05rem, 1.8vw, 1.2rem);
-  color: #e2f4e8;
+  color: #e0f2fe;
   line-height: 1.7;
   margin-bottom: 34px;
 }
@@ -465,9 +479,9 @@ a:hover {
   margin-bottom: 50px;
 }
 
-/* Header interior pentru pagini secundare (Despre, Departamente etc.) */
+/* Header interior pentru pagini secundare */
 .page-hero {
-  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
   color: #ffffff;
   padding: 60px 0 65px;
   text-align: center;
@@ -482,8 +496,8 @@ a:hover {
 
 .page-hero-subtitle {
   font-size: 1.1rem;
-  color: #d1ead7;
-  max-width: 650px;
+  color: #bae6fd;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -527,6 +541,14 @@ a:hover {
   line-height: 1;
 }
 
+.stat-blank {
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1;
+}
+
 .stat-plus {
   font-family: var(--font-heading);
   font-size: 1.8rem;
@@ -561,7 +583,7 @@ a:hover {
 
 .section-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 50px;
 }
 
@@ -648,7 +670,7 @@ a:hover {
   display: inline-block;
   align-self: flex-start;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   padding: 4px 12px;
@@ -693,6 +715,46 @@ a:hover {
   box-shadow: var(--shadow-hover);
 }
 
+.project-img-wrapper {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg-subtle);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+  display: block;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-img-placeholder {
+  width: 100%;
+  height: 190px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-bottom: 1px solid var(--brand-primary-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-primary-hover);
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.project-img-placeholder .placeholder-icon {
+  font-size: 2.5rem;
+}
+
 .project-header-bar {
   padding: 20px 24px;
   background: var(--brand-primary-soft);
@@ -711,9 +773,9 @@ a:hover {
 }
 
 .tag-active {
-  background: #dcfce7;
-  color: #166534;
-  border: 1px solid #86efac;
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #93c5fd;
 }
 
 .tag-upcoming {
@@ -723,9 +785,15 @@ a:hover {
 }
 
 .tag-annual {
-  background: #e0f2fe;
-  color: #0369a1;
-  border: 1px solid #bae6fd;
+  background: #ccfbf1;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
+}
+
+.tag-red {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
 }
 
 .project-body {
@@ -752,7 +820,60 @@ a:hover {
   color: var(--text-muted);
 }
 
-/* Carduri pentru Echipa de Conducere */
+/* Carduri pentru Echipa ASMO (Consiliu Director, Comitete, Divizii) */
+.team-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.team-tab-btn {
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: 1.5px solid var(--border-soft);
+  background: var(--bg-white);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.team-tab-btn:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.team-tab-btn.active {
+  background: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+}
+
+.team-group-header {
+  margin: 32px 0 20px;
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 12px;
+}
+
+.team-group-title {
+  font-size: 1.45rem;
+  margin-bottom: 6px;
+  color: var(--text-title);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team-group-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -767,6 +888,9 @@ a:hover {
   text-align: center;
   transition: var(--transition);
   box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team-card:hover {
@@ -775,9 +899,43 @@ a:hover {
   box-shadow: var(--shadow-hover);
 }
 
-.team-avatar {
-  width: 68px;
-  height: 68px;
+.team-card-featured {
+  border: 2px solid var(--brand-primary-border);
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+}
+
+.team-photo-frame {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  position: relative;
+  padding: 4px;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.16);
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card:hover .team-photo-frame {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.28);
+}
+
+.team-photo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
+  display: block;
+}
+
+.team-avatar-fallback {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background: var(--brand-primary);
   color: #fff;
@@ -785,38 +943,124 @@ a:hover {
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 1.3rem;
-  margin: 0 auto 16px;
-  box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
+  font-size: 1.5rem;
 }
 
-.team-role {
+.team-badge {
   display: inline-block;
   font-size: 0.775rem;
-  font-weight: 700;
-  color: var(--brand-primary);
-  background: var(--brand-primary-soft);
-  padding: 3px 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 4px 14px;
   border-radius: var(--radius-pill);
   margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.badge-presedinte {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.badge-cd {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+/* Acronym badges matching user screenshots */
+.badge-lora {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fca5a5;
+}
+
+.badge-lpo {
+  background: #ffedd5;
+  color: #ea580c;
+  border: 1px solid #fdba74;
+}
+
+.badge-lore {
+  background: #dbeafe;
+  color: #2563eb;
+  border: 1px solid #93c5fd;
+}
+
+.badge-lorp {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #86efac;
+}
+
+.badge-lome {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.badge-div {
+  background: #f5f3ff;
+  color: #7c3aed;
+  border: 1px solid #ddd6fe;
 }
 
 .team-name {
   font-size: 1.15rem;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+  color: var(--text-title);
+  font-weight: 700;
+}
+
+.team-subrole {
+  font-size: 0.825rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .team-bio {
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.5;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
+  flex-grow: 1;
 }
 
-.team-email {
-  font-size: 0.825rem;
-  color: var(--brand-primary);
-  font-weight: 600;
+/* Dept Lead row in departamente.html */
+.dept-lead-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  margin-top: auto;
+  border-top: 1px solid var(--border-light);
+}
+
+.dept-lead-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-primary-border);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dept-lead-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-lead-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-title);
+  line-height: 1.2;
+}
+
+.dept-lead-role {
+  font-size: 0.775rem;
+  color: var(--text-muted);
 }
 
 /* ==========================================================================
@@ -865,7 +1109,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   Formular de Contact & Înscriere Voluntari
+   Formular de Contact ASMO
    ========================================================================== */
 .contact-layout {
   display: grid;
@@ -947,7 +1191,7 @@ a:hover {
 
 .form-control:focus {
   border-color: var(--brand-primary);
-  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.15);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
 }
 
 .form-feedback {
@@ -961,9 +1205,9 @@ a:hover {
 
 .form-feedback.success {
   display: block;
-  background-color: #dcfce7;
-  border: 1px solid #86efac;
-  color: #166534;
+  background-color: #dbeafe;
+  border: 1px solid #93c5fd;
+  color: #1e40af;
 }
 
 /* ==========================================================================
@@ -1018,11 +1262,182 @@ a:hover {
 }
 
 /* ==========================================================================
+   Cronologie / Timeline Evenimente ASMO
+   ========================================================================== */
+.timeline-container {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 2px;
+  background: var(--border-light);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 36px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 19px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 4px solid var(--brand-primary);
+  box-shadow: 0 0 0 4px var(--brand-primary-soft);
+  z-index: 1;
+}
+
+.timeline-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-primary-border);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.timeline-date-pill {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  border: 1px solid var(--brand-primary-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.timeline-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.timeline-meta {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ==========================================================================
+   Mentori Clinici & Spitale Partenere (Inspirat din SSMB)
+   ========================================================================== */
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.mentor-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-align: center;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.mentor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-primary-border);
+}
+
+.mentor-badge-role {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+}
+
+.mentor-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 6px;
+}
+
+.mentor-title {
+  font-size: 0.875rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mentor-hospital {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.mentor-project-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  color: var(--text-main);
+}
+
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 .footer {
   background-color: var(--bg-dark-footer);
-  color: #d1ead7;
+  color: #bae6fd;
   padding: 65px 0 24px;
   border-top: 4px solid var(--brand-primary);
   margin-top: auto;
@@ -1049,13 +1464,13 @@ a:hover {
 
 .footer-brand-sub {
   font-size: 0.775rem;
-  color: #86efac;
+  color: #7dd3fc;
 }
 
 .footer-motto {
   font-size: 0.885rem;
   line-height: 1.6;
-  color: #bbf7d0;
+  color: #e0f2fe;
   margin-bottom: 20px;
   max-width: 320px;
 }
@@ -1099,7 +1514,7 @@ a:hover {
 }
 
 .footer-nav a {
-  color: #bbf7d0;
+  color: #bae6fd;
   font-size: 0.885rem;
   transition: var(--transition);
 }
@@ -1115,7 +1530,7 @@ a:hover {
   flex-direction: column;
   gap: 10px;
   font-size: 0.885rem;
-  color: #bbf7d0;
+  color: #bae6fd;
 }
 
 .footer-bottom {
@@ -1128,7 +1543,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 0.825rem;
-  color: #86efac;
+  color: #7dd3fc;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -1230,3 +1645,644 @@ a:hover {
     text-align: center;
   }
 }
+
+/* ==========================================================================
+   SSMB-Inspired Divizii Showcase
+   ========================================================================== */
+.divizii-ssmb-wrapper {
+  margin-top: 20px;
+}
+
+/* Intro banner inspired by SSMB */
+.divizii-intro-box {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.05) 0%, rgba(13, 148, 136, 0.05) 100%);
+  border: 1px solid var(--brand-primary-border);
+  border-radius: var(--radius-lg);
+  padding: 30px 34px;
+  margin-bottom: 34px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.divizii-intro-box:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--brand-primary);
+}
+
+.divizii-intro-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--brand-primary), var(--brand-accent));
+}
+
+.divizii-intro-title {
+  font-size: 1.35rem;
+  color: var(--text-title);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.divizii-intro-p {
+  font-size: 1.025rem;
+  line-height: 1.75;
+  color: var(--text-main);
+  text-align: justify;
+}
+
+/* SSMB & Comitete Tabs bar */
+.ssmb-tabs-nav,
+.comitete-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 8px;
+  background: var(--bg-white);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-subtle);
+}
+
+.ssmb-tab-btn,
+.comitete-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.925rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ssmb-tab-btn:hover,
+.comitete-tab-btn:hover {
+  color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+  transform: translateY(-1px);
+}
+
+.ssmb-tab-btn.active,
+.comitete-tab-btn.active {
+  background: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
+}
+
+.ssmb-tab-icon {
+  font-size: 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Member Showcase Card — Uniform Split Layout across All Roles */
+.member-showcase-card {
+  display: block;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 38px 36px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+  transition: var(--transition);
+}
+
+.member-showcase-card:hover {
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Sticky Subnav Bar for Team & Structure */
+.sticky-subnav {
+  position: sticky;
+  top: 76px;
+  z-index: 95;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.sticky-subnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sticky-subnav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sticky-subnav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-title);
+  background: var(--bg-surface-alt, #f8fafc);
+  border: 1px solid var(--border-color, #e2e8f0);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.sticky-subnav-btn:hover,
+.sticky-subnav-btn.active {
+  background: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+}
+
+.sticky-subnav-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  font-size: 0.725rem;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.08);
+  color: inherit;
+}
+
+.sticky-subnav-btn.active .sticky-subnav-count,
+.sticky-subnav-btn:hover .sticky-subnav-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Person Quick Jump Bar */
+.person-quick-jump {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background: var(--bg-surface-alt, #f8fafc);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.quick-jump-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+
+.quick-jump-pill {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-title);
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.quick-jump-pill:hover {
+  background: var(--brand-primary-soft);
+  color: var(--brand-primary);
+  border-color: var(--brand-primary-border);
+}
+
+/* Division & Comitete Content Panels */
+.ssmb-panel,
+.comitete-panel {
+  display: block;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 40px 38px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.ssmb-panel-grid {
+  display: grid;
+  grid-template-columns: 1fr 2px 320px;
+  gap: 36px;
+  align-items: center;
+}
+
+/* Left text block */
+.ssmb-content-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ssmb-div-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: fit-content;
+  background: #f8fafc;
+  color: var(--text-title);
+  border: 1px solid var(--border-color);
+}
+
+.ssmb-div-title {
+  font-size: 1.85rem;
+  color: var(--text-title);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.ssmb-desc {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.ssmb-desc strong {
+  color: var(--text-title);
+  font-weight: 700;
+}
+
+/* Vertical divider */
+.ssmb-vertical-divider {
+  width: 2px;
+  height: 80%;
+  min-height: 280px;
+  background: linear-gradient(180deg, transparent, var(--brand-primary), var(--brand-accent), transparent);
+  border-radius: 99px;
+  opacity: 0.6;
+}
+
+/* Right coordinator side */
+.ssmb-coord-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 26px 20px;
+  background: linear-gradient(180deg, var(--bg-page) 0%, rgba(255, 255, 255, 0.9) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+}
+
+.ssmb-coord-side:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--brand-primary-border);
+}
+
+.ssmb-coord-avatar-wrap {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  position: relative;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+  padding: 4px;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ssmb-coord-avatar-wrap:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.3);
+}
+
+.ssmb-coord-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #ffffff;
+  display: block;
+}
+
+.ssmb-coord-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 4px;
+}
+
+.ssmb-coord-role {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  margin-bottom: 12px;
+}
+
+.ssmb-coord-meta {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.ssmb-coord-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.775rem;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: var(--text-title);
+  border: 1px solid var(--border-color);
+}
+
+/* Quick Glance Grid for All 6 Divisions */
+.ssmb-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.ssmb-mini-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.ssmb-mini-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.ssmb-mini-card.active-mini {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary-soft);
+}
+
+.ssmb-mini-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.ssmb-mini-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-primary-border);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #ffffff;
+}
+
+.ssmb-mini-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ssmb-mini-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-title);
+  line-height: 1.25;
+}
+
+.ssmb-mini-lead {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.ssmb-mini-summary {
+  font-size: 0.885rem;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.ssmb-mini-action {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ==========================================================================
+   Comitete Medicale Permanente Showcase (Without Project Clutter)
+   ========================================================================== */
+.comitete-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.comitet-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.comitet-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary-border);
+  box-shadow: var(--shadow-hover);
+}
+
+.comitet-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--card-accent, var(--brand-primary));
+}
+
+.comitet-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.comitet-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.775rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.comitet-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 10px;
+}
+
+.comitet-desc {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   FAST MICRO-ANIMATIONS (Snappy, non-blocking, under 0.35s)
+   ========================================================================== */
+/* Scroll reveal */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.04s; }
+.delay-2 { transition-delay: 0.08s; }
+.delay-3 { transition-delay: 0.12s; }
+.delay-4 { transition-delay: 0.16s; }
+
+/* Interactive Hover Lift & Glow */
+.hover-lift {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Micro-Pulse for badges & status */
+@keyframes microPulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.12); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse-dot {
+  animation: microPulse 2s infinite ease-in-out;
+}
+
+/* Smooth button arrow micro-interaction */
+.btn:hover svg, .top-link:hover svg {
+  transform: translateX(3px);
+  transition: transform 0.2s ease;
+}
+
+.btn svg, .top-link svg {
+  transition: transform 0.2s ease;
+}
+
+/* Team Photo Hover Micro-glow */
+.team-photo-frame {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover .team-photo-frame {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
+}
+
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Responsive Division Split View */
+@media (max-width: 900px) {
+  .ssmb-panel-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ssmb-vertical-divider {
+    display: none;
+  }
+
+  .ssmb-coord-side {
+    max-width: 360px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .ssmb-tasks-list {
+    grid-template-columns: 1fr;
+  }
+}
+
